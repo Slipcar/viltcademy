@@ -1,0 +1,13 @@
+[
+    {
+    "titulo": "Kotlin Básico",
+    "tipo": "Série",
+    "capa": "https://miro.medium.com/max/1200/1*8YPjY2xhNwQylBBs8dYB0g.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kotlin_logo.svg/2560px-Kotlin_logo.svg.png",
+    "thumb": "https://miro.medium.com/max/800/0*S9nXLRf9qMv541GB.png",
+    "descricao": "Kotlin é uma linguagem de programação desenvolvida pela JetBrain que é a linguagem oficial para o desenvolvimento de aplicativos Android",
+    "generos": ["Iniciantes", "Back-end", "Mobile"],
+    "elenco": ["Luis Carlos Souza"],
+    "cenas_momentos": ["Fácil aprendizado", "cross-platform", "object-oriented"]
+    }
+]

@@ -1,0 +1,285 @@
+body {
+  background-color: #000;
+  /* background-color: rgba(1, 7, 71, 0.852); */
+}
+
+header {
+  padding: 2% 5%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.69) 0% rgba(0, 0, 0, 0) 100%
+  );
+}
+
+section {
+  margin-bottom: -100px;
+  position: relative;
+}
+
+section:hover {
+  z-index: 10;
+}
+
+.user {
+  padding-top: 23px;
+  padding-left: 55px;
+  cursor: pointer;
+}
+
+.user a{
+  text-decoration: none;
+}
+
+.menu_list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 23px;
+}
+
+
+.menu_list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu_list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo_v {
+  width: 15px;
+  margin-right: 3px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 350px;
+}
+
+.btn-custom-white {
+  background-color: #fff;
+}
+
+.btn-custom-translucent {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.btn-custom-white:hover {
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.btn-custom-translucent:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  opacity: 0.8;
+}
+
+.btn-custom-round {
+  padding: 5px 10px !important;
+}
+
+.btn + .btn {
+  margin-left: 8px;
+}
+
+.filme-lista {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  list-style: none;
+  white-space: nowrap;
+  padding: 20px 0;
+  border: 1px solid transparent;
+  display: block;
+}
+
+.filme-lista::-webkit-scrollbar {
+  display: none;
+}
+
+.filme {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+  overflow-x: hidden;
+  border: 1px solid transparent;
+}
+
+.filme:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 1000;
+  transform: 0.5s;
+}
+
+.filme:hover .filme-info {
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.filme:first-child {
+  margin-left: 70px;
+}
+
+.filme-info {
+  background-color: #171717;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+}
+
+.filme-info .col-12:first-child {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.filme-info p {
+    color: #7e7b7b;
+}
+
+.filme-info p text{
+    color: #fff;
+}
+
+#hero {
+  height: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  /* background-image: url(../../assets/kotlin/kotlin_course_banner.png); */
+  /* background-image: url(https://cdn.sanity.io/images/s7xbv9bz/production/2691d60a30c8ace5440495756809fa454b37a54b-2000x1000.png); */
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  z-index: 1;
+  top: 0;
+}
+
+#hero::after {
+  content: "";
+  height: 700px;
+  display: block;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%); */
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+  /* background: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%); */
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  /* top: calc(700px - 350px); */
+}
+
+#hero_infos {
+  padding: 0px;
+  margin-top: 170px;
+  z-index: 3;
+  position: absolute;
+}
+
+#hero_infos h1 {
+  margin-bottom: 20px;
+}
+
+#main-content {
+  margin-top: 700px;
+}
+
+/* modal */
+.modal-dialog, .modal-content {
+  background: #171717;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-hero {
+  height: 300px;
+  /* background-image: url(../../assets/kotlin/kotlin_course_banner.png); */
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 205px 15px;
+  margin-bottom: 50px;
+}
+
+.modal-hero::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%);
+  position: absolute;
+  left: 0;
+  margin-top: 210px;
+  z-index: 1;
+  top: 0;
+}
+
+.modal-hero img{
+  width: 250px;
+  position: relative;
+  margin-top: -110px;
+  margin-bottom: 150px;
+  z-index: 2;
+}
+
+.modal-hero-infos {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-hero-infos button:first-child {
+  margin-right: 20px;
+}
+
+.filme-descricao {
+  font-size: 15px;
+  color: #fff;
+}
+
+.filme-elenco {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.filme-elenco text{
+  color: #fff;
+}
+
+#lista-episodios li:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#lista-episodios {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-episodios li {
+  padding: 20px;
+}
+
+#lista-episodios li p {
+  font-size: 13px;
+}

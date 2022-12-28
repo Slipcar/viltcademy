@@ -1,0 +1,37 @@
+body {
+    background-color: #000;
+}
+
+header {
+    padding: 2% 5%;
+    width: 100%;
+    top: 10px;
+    z-index: 2;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.69) 0%
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+header img {
+    width: 300px;
+}
+
+.bg_filmes {
+    background-image: url(../../assets/background1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-img {
+    width: 330px;
+    float: right;
+    padding: 50px 100px 0px 80px;
+}
+
+#caixa_login {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 135px;
+}
